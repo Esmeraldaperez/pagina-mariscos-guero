@@ -1,0 +1,162 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color:#1393f5;
+    }
+.contenedor{
+	background-color: yellow;
+	width: 90%;
+	padding: 5px;
+	max-width: 1000px;
+	margin:auto;
+	display: grid;
+	grid-gap: 3px;
+	grid-template-columns: repeat(4,1fr);
+}
+.cabecera, .menu, .contenedor> div{
+	background-color: red;
+	padding: 5px;
+}
+.cabecera{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+}
+.cabecera, .menu, .pie{
+    grid-column: span 4;
+}
+.logo{
+	grid-column: span 1;
+	background-color: red;
+}
+.banner{
+	grid-column: span 5;
+	background-color: #1393f5;
+	
+}
+.menu{
+	background-color: yellow;
+}
+.text{
+	background-color: silver;
+}
+.principal{
+	grid-column: span 3;
+	background-color: orange;
+}
+#seccion1{
+	background-color: blue;
+
+}
+#seccion1{
+	background-color: orange;
+}
+#seccion2{
+	background-color: silver;
+}
+#seccion3{
+	background-color: orange;
+}
+.pie{
+	display: block;
+	text-align: center;
+
+}
+.tett{
+	text-align: center;
+}
+p{
+	text-align: justify;
+}
+#btnmenu{
+	display: none;
+}
+.cabecera label{
+	display: none;
+	width: 32px;
+	height: 32px;
+	padding: 10px;
+	border: 1px solid #fff;
+}
+.cabecera label:hover{
+	cursor: pointer;
+	background-color: red;
+}
+.menu ul{
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+.menu ul a{
+	display: block;
+	padding: 20px 50px;
+	background-color: yellow;
+	color: #000;
+	text-decoration: none;
+	border: 1px solid;
+	font-family: fuente;
+}
+.menu ul a:hover {
+	background-color: #c3ffc6;
+	color:green;
+}
+.menu li{
+	flex-grow: 1;
+}
+@media(max-width: 768px){
+
+		body{
+		background:color:#1393f5;{}
+ 
+    }
+	.cabecera label{ display: block;
+
+	}
+	
+	.menu{
+		background-color: #d6d6d6;
+		width: 100%;
+		display: none;
+	}
+	.menu ul{
+		flex-direction: column;
+	}
+	.cabecera #btnmenu:checked ~ .menu{display: block;}
+}
+.minis{
+	display: block;
+	text-align: justify;
+}
+.minis>p{
+	text-align: center;
+}
+h1{
+	font-family:'fuente';
+}
+@font-face{
+	font-family: 'fuente';
+	src:url('../fuente/fuente.otf');
+	font-style: normal;
+	font-weight: bold;
+}
+video{
+	width: 100%;
+	height: 200px;
+}
+div{
+	width: 100%
+	height: 100%;
+
+}
+.logo{
+	grid-column: span 4;
+	margin: auto;
+	width: 50%;
+}
+.lateral{
+	display: none;
+}
+#iconomenu span{
+	color: black;
+}
